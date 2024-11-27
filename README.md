@@ -1,6 +1,6 @@
 <div align="center">
 
-# asdf-p2cli [![Build](https://github.com/zufardhiyaulhaq/asdf-p2cli/actions/workflows/build.yml/badge.svg)](https://github.com/zufardhiyaulhaq/asdf-p2cli/actions/workflows/build.yml) [![Lint](https://github.com/zufardhiyaulhaq/asdf-p2cli/actions/workflows/lint.yml/badge.svg)](https://github.com/zufardhiyaulhaq/asdf-p2cli/actions/workflows/lint.yml)
+# asdf-p2cli [![Build](https://github.com/ORCID/asdf-p2cli/actions/workflows/build.yml/badge.svg)](https://github.com/ORCID/asdf-p2cli/actions/workflows/build.yml) [![Lint](https://github.com/ORCID/asdf-p2cli/actions/workflows/lint.yml/badge.svg)](https://github.com/ORCID/asdf-p2cli/actions/workflows/lint.yml)
 
 
 [p2cli](https://github.com/aquasecurity/p2cli) plugin for the [asdf version manager](https://asdf-vm.com).
@@ -50,8 +50,8 @@ install & manage versions.
 
 Contributions of any kind welcome! See the [contributing guide](contributing.md).
 
-[Thanks goes to these contributors](https://github.com/zufardhiyaulhaq/asdf-p2cli/graphs/contributors)!
+[Thanks goes to these contributors](https://github.com/ORCID/asdf-p2cli/graphs/contributors)!
 
 # License
 
-See [LICENSE](LICENSE) © [Zufar Dhiyaulhaq](https://github.com/zufardhiyaulhaq/)
+See [LICENSE](LICENSE) © [ORCID] (https://github.com/ORCID/)
