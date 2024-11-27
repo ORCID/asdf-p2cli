@@ -65,6 +65,22 @@ install_version() {
   local version="$2"
   local install_path="$3/bin"
 
+  local platform
+  case "$(uname)" in
+  Linux) platform=linux ;;
+  Darwin) platform=darwin ;;
+  FreeBSD) platform=freebsd ;;
+  *) platform=windows ;;
+  esac
+
+  local arch
+  case "$(uname -m)" in
+  x86_64) arch=amd64 ;;
+  amd64) arch=amd64 ;;
+  x86) arch=386 ;;
+  aarch64 | arm64) arch=arm64 ;;
+  esac
+
   if [ "$install_type" != "version" ]; then
     fail "asdf-$TOOL_NAME supports release installs only"
   fi
@@ -74,7 +90,7 @@ install_version() {
     tool_cmd="$(echo "$TOOL_TEST" | cut -d' ' -f1)"
 
     mkdir -p "$install_path"
-    cp -r "$ASDF_DOWNLOAD_PATH"/$tool_cmd "$install_path"
+    cp -r "$ASDF_DOWNLOAD_PATH"/p2cli_r${version}_${platform}-${arch} "$install_path"
 
     chmod +x "$install_path/$tool_cmd"
     test -x "$install_path/$tool_cmd" || fail "Expected $install_path/$tool_cmd to be executable."
