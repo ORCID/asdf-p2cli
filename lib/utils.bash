@@ -39,18 +39,18 @@ download_release() {
 
   local platform
   case "$(uname)" in
-    Linux) arch=linux ;;
-    Darwin) arch=darwin ;;
-    FreeBSD) arch=freebsd ;;
-    *) arch=windows ;;
+  Linux) arch=linux ;;
+  Darwin) arch=darwin ;;
+  FreeBSD) arch=freebsd ;;
+  *) arch=windows ;;
   esac
 
   local arch
   case "$(uname -m)" in
-    x86_64) arch=amd64 ;;
-    amd64) arch=amd64 ;;
-    x86) arch=386 ;;
-    aarch64|arm64) arch=arm64 ;;
+  x86_64) arch=amd64 ;;
+  amd64) arch=amd64 ;;
+  x86) arch=386 ;;
+  aarch64 | arm64) arch=arm64 ;;
   esac
 
   url="$GH_REPO/releases/download/r${version}/p2cli_r${version}_${platform}-${arch}.tar.gz"
