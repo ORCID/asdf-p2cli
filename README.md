@@ -24,7 +24,7 @@
 Plugin:
 
 ```shell
-asdf plugin add p2cli https://github.com/zufardhiyaulhaq/asdf-p2cli.git
+asdf plugin add p2cli https://github.com/ORCID/asdf-p2cli.git
 ```
 
 p2cli:
