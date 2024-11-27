@@ -42,12 +42,13 @@ download_release() {
     Linux) arch=linux ;;
     Darwin) arch=darwin ;;
     FreeBSD) arch=freebsd ;;
-    *) arch=windows
+    *) arch=windows ;;
   esac
 
   local arch
   case "$(uname -m)" in
     x86_64) arch=amd64 ;;
+    amd64) arch=amd64 ;;
     x86) arch=386 ;;
     aarch64|arm64) arch=arm64 ;;
   esac
