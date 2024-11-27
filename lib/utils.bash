@@ -3,8 +3,8 @@
 set -euo pipefail
 
 GH_REPO="https://github.com/wrouesnel/p2cli"
-TOOL_NAME="p2cli"
-TOOL_TEST="p2cli --version"
+TOOL_NAME="p2"
+TOOL_TEST="p2 --version"
 
 fail() {
   echo -e "asdf-$TOOL_NAME: $*"
