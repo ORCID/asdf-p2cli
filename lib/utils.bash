@@ -53,7 +53,7 @@ download_release() {
   aarch64 | arm64) arch=arm64 ;;
   esac
 
-  url="$GH_REPO/releases/download/r${version}/p2cli_r${version}_${platform}-${arch}.tar.gz"
+  url="$GH_REPO/releases/download/${version}/p2cli_${version}_${platform}-${arch}.tar.gz"
 
   echo "* Downloading $TOOL_NAME release $version..."
   curl "${curl_opts[@]}" -o "$filename" -C - "$url" || fail "Could not download $url"
