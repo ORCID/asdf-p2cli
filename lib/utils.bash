@@ -2,7 +2,7 @@
 
 set -euo pipefail
 
-GH_REPO="https://github.com/aquasecurity/p2cli"
+GH_REPO="https://github.com/wrouesnel/p2cli"
 TOOL_NAME="p2cli"
 TOOL_TEST="p2cli --version"
 

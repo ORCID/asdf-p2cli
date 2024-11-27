@@ -3,7 +3,7 @@
 # asdf-p2cli [![Build](https://github.com/ORCID/asdf-p2cli/actions/workflows/build.yml/badge.svg)](https://github.com/ORCID/asdf-p2cli/actions/workflows/build.yml) [![Lint](https://github.com/ORCID/asdf-p2cli/actions/workflows/lint.yml/badge.svg)](https://github.com/ORCID/asdf-p2cli/actions/workflows/lint.yml)
 
 
-[p2cli](https://github.com/aquasecurity/p2cli) plugin for the [asdf version manager](https://asdf-vm.com).
+[p2cli](https://github.com/wrouesnel/p2cli) plugin for the [asdf version manager](https://asdf-vm.com).
 
 </div>
 
