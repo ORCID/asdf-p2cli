@@ -39,10 +39,10 @@ download_release() {
 
   local platform
   case "$(uname)" in
-  Linux) arch=linux ;;
-  Darwin) arch=darwin ;;
-  FreeBSD) arch=freebsd ;;
-  *) arch=windows ;;
+  Linux) platform=linux ;;
+  Darwin) platform=darwin ;;
+  FreeBSD) platform=freebsd ;;
+  *) platform=windows ;;
   esac
 
   local arch
