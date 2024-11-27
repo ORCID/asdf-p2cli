@@ -38,7 +38,7 @@ download_release() {
   filename="$2"
 
   local platform
-  case "$(uname) in
+  case "$(uname)" in
     Linux) arch=linux ;;
     Darwin) arch=darwin ;;
     FreeBSD) arch=freebsd ;;
