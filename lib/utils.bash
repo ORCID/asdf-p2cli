@@ -90,7 +90,7 @@ install_version() {
     tool_cmd="$(echo "$TOOL_TEST" | cut -d' ' -f1)"
 
     mkdir -p "$install_path"
-    cp -r "$ASDF_DOWNLOAD_PATH"/p2cli_r${version}_${platform}-${arch} "$install_path/$tool_cmd"
+    cp -r "$ASDF_DOWNLOAD_PATH"/p2cli_r${version}_${platform}-${arch}/$tool_cmd "$install_path/$tool_cmd"
 
     chmod +x "$install_path/$tool_cmd"
     test -x "$install_path/$tool_cmd" || fail "Expected $install_path/$tool_cmd to be executable."
